@@ -7,12 +7,13 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "faker"
 
-20.times do
-    @birds = Bird.new(
-        anatomy: Faker::Creature::Bird.anatomy,
-        color: Faker::Creature::Bird.color,
-        adjective: Faker::Creature::Bird.adjective
+27.times do
+    @dota = Bird.new(
+        hero: Faker::Games::Dota.hero,
+        item: Faker::Games::Dota.item,
+        team: Faker::Games::Dota.team,
+        player: Faker::Games::Dota.player
     )
 
-    @birds.save
+    @dota.save
 end
