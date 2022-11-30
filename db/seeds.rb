@@ -8,7 +8,7 @@
 require "faker"
 
 27.times do
-    @dota = Bird.new(
+    @dota = Dotum.new(
         hero: Faker::Games::Dota.hero,
         item: Faker::Games::Dota.item,
         team: Faker::Games::Dota.team,
